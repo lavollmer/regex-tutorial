@@ -10,6 +10,8 @@ The regular expression described in this tutorial is Matching a Hex Value. The t
 
 Code Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
+The tutorial below will discuss anchors, quantifiers, character classes and more. 
+
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -33,9 +35,17 @@ Anchors match a specific part of the input string instead of the characters.
 * ^ matches the start of the input string
 * $ matches the end of an input string
 
+As seen below in the hex value regex example, /^# informs the regex engine that the string will begin with the character #. # will be used to determine a hexadecimal value. 
+
+Anchor Hex Value Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
 ### Quantifiers
 
 The quantifiers determines numbers of characters or expressions to match.
+
+As seen below in the hex value regex example, the quantifier ? indicates that the character # preceding ? is optional. The quantifier {} informs the regex engine how many instances of the preceding information will be searched.[a-f0-9]{6} indicates that there are 6 instances of the preceding [a-f0-9].The regex will allow for 6 string characters comprised of a letter and integer. [a-f0-9]{3} indicates that are 3 instances of the preceding [a-f0-9].The regex will look for 3 string characters comprised of a letter and integer.
+
+Anchor Hex Value Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ### OR Operator
 
@@ -56,7 +66,11 @@ Regexs have optional flags that allow for searching for global searching and cas
 
 ### Grouping and Capturing
 
+Grouping groups an expression like this ().
+
 ### Bracket Expressions
+
+Bracket expressions such as [abc] matches any character in the set. [a-z] means a range of characters that matches any chracter in the set.
 
 ### Greedy and Lazy Match
 
@@ -74,9 +88,15 @@ Example:
 
 ### Look-ahead and Look-behind
 
+
+
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+
+Laura Vollmer is an aspiring fullstack web developer with experience in healthcare and the floral industry.
+
+Github profile: https://github.com/lavollmer
 
 ## Credits
 
@@ -84,4 +104,5 @@ Information was inspired by:
 
 * https://sdsawtelle.github.io/blog/output/regular-expressions-in-python.html
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
-* 
+* https://regexlearn.com/cheatsheet
+*

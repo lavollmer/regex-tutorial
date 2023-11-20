@@ -28,6 +28,11 @@ Code Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ### Anchors
 
+Anchors match a specific part of the input string instead of the characters.
+
+* ^ matches the start of the input string
+* $ matches the end of an input string
+
 ### Quantifiers
 
 ### OR Operator

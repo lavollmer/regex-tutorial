@@ -35,6 +35,8 @@ Anchors match a specific part of the input string instead of the characters.
 
 ### Quantifiers
 
+The quantifiers determines numbers of characters or expressions to match.
+
 ### OR Operator
 
 ### Character Classes
@@ -50,6 +52,8 @@ Character classes are specific subsets of characters. Regex will try to match a 
 
 ### Flags
 
+Regexs have optional flags that allow for searching for global searching and case-sensitive searching. 
+
 ### Grouping and Capturing
 
 ### Bracket Expressions
@@ -58,6 +62,14 @@ Character classes are specific subsets of characters. Regex will try to match a 
 
 ### Boundaries
 
+Word boundry (\b) matches the word character or position at the end of the word. 
+
+A Not Word Boundry (\B) matches the word character or position that is not at the end of the word.
+
+Example:
+* d\b would look for the "d" in the word "and"
+* d\B would look for the "d" in the word "wide"
+
 ### Back-references
 
 ### Look-ahead and Look-behind
@@ -65,3 +77,11 @@ Character classes are specific subsets of characters. Regex will try to match a 
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+
+## Credits
+
+Information was inspired by:
+
+* https://sdsawtelle.github.io/blog/output/regular-expressions-in-python.html
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+* 

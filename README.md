@@ -49,6 +49,10 @@ Anchor Hex Value Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ### OR Operator
 
+The OR Operator | is a boolean that matches the before or after code snippet. In the hex value regex example below, it is saying that a 6 character string (characters made of a-z or integers 0-9) or 3 character string (characters made of a-z or integers 0-9) will be allowed. Anything outside those specified character counts will not match.
+
+Anchor Hex Value Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+
 ### Character Classes
 
 A regex includes simple characters and special characters. Simple characters are characters that mean exactly what they are. An example would be the alphabet such as "a" means "a". [abcd] is the same [a-d] which specifies a range of characters.

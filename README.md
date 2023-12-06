@@ -35,7 +35,7 @@ Anchors match a specific part of the input string instead of the characters.
 * ^ matches the beginning of the input string
 * $ matches the end of an input string
 
-As seen below in the hex value regex example, /^# informs the regex engine that the string will begin with the character #. # will be used to determine a hexadecimal value. 
+As seen below in the hex value regex example, /^# informs the regex engine that the string will begin with the character #. # will be used to determine a hexadecimal value. The $ anchor tells the regex it is the end of the input string.
 
 Hex Value Example: /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
@@ -94,13 +94,6 @@ Example:
 * d\b would look for the "d" in the word "and"
 * d\B would look for the "d" in the word "wide"
 
-### Back-references
-
-We do not have any back-references in our hex value matching example.
-
-### Look-ahead and Look-behind
-
-We do not have any look-ahead or look-behind in our hex value matching example.
 
 ## Author
 
